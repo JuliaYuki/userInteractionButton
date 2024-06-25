@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>User Interaction</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: lightslategray;
+                display: flex;
+                justify-content: center;
+                height: 100vh;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #button {
+                
+                background-color: white;
+                border: 2px solid #ccc;
+                border-radius: 5px;
+                padding: 20px;
+                width: 150px;
+                font-size: 20px;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+
+            #button:hover {
+                background-color: #b6b6b6;
+                color: white;
+                border: 2px solid dodgerblue;
+            }
+
+            .message {
+                color: white;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <button id="button" type="button">Clique aqui</button>
+            <div id="message" class="message"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
